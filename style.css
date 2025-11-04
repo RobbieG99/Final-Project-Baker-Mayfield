@@ -1,0 +1,351 @@
+p {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(255, 60, 0);
+  padding: 15px;
+  color: rgb(49, 29, 0);
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; 
+  background-color: orangered;
+  padding: 10px 0;
+}
+
+nav a {
+  flex: 1 1 150px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgb(255, 90, 30);
+}
+
+.Nfl-img {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 50px;
+  height: auto;
+  max-width: 15%;
+  flex-wrap: wrap;
+}
+
+p.Intro-pick {
+  color: rgb(49, 29, 0);
+  text-align: center;
+}
+
+.the-pick,
+.baker-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.draft-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.end-pick {
+  color: rgb(49, 29, 0);
+  text-align: center;
+  margin-top: 12px;
+  position: static;   
+  clear: both;
+  width: 100%; 
+  text-decoration: none;
+}
+
+.baker-video{
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+
+form {
+  width: 350px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form h2 {
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.me {
+  max-width: 100%;
+  width: 250px;
+  height: auto;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    flex-direction: column; 
+  }
+
+  nav a {
+    flex: 1 1 100%;
+    padding: 10px 0;
+  }
+
+  .image-container {
+    padding: 10px;
+  }
+
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .me {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .draft-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .Nfl-img {
+    width: 50px;
+    top: 10px;
+    left: 10px;
+    display: none;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 950px) {
+  .Nfl-img {
+    display: none;
+  }
+}
+
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #000000;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(255, 90, 30);
+  color: white;
+}
+
+
+.Browns-Stats, .team-browns {
+  color: rgb(49, 29, 0);
+}
+
+.Panthers-Stats, .team-panthers {
+  color: rgb(0, 133, 202);
+}
+
+.Rams-Stats, .team-rams {
+  color: rgb(255, 163, 0);
+}
+
+.Buccaneers-Stats, .team-buccaneers {
+  color: rgb(213, 10, 10);
+}
+
+.team-texas-tech, .texas-tech {
+  color: rgb(204, 0, 0);
+}
+
+.team-oklahoma, .oklahoma {
+  color: rgb(132, 23, 25);
+}
+
+.goat-convo {
+  text-align: center;
+}
+
+
+footer {
+  margin: 0;
+  padding: 10px 0;
+  background-color: rgb(255, 60, 0);
+  text-align: center;
+  margin-top: auto;
+}
+
+.Contact-Me {
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sources {
+  text-align: center;
+  margin-top: 60px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
+}
+
+.grid-container img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 700px) {
+  .grid-container {
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+.edit-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.edit-wrapper video {
+  width: 540px;
+  height: 304px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+.edit-wrapper {
+  flex-direction: column;
+}
+
+.edit-wrapper video {
+  width: 90vw;
+  height: calc(90vw * 9 / 16);
+}
+}
+
